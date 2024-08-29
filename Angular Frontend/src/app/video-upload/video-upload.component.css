@@ -1,0 +1,92 @@
+.video-upload-container {
+ 
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.upload-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.upload-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.upload-label i {
+  margin-right: 10px;
+}
+
+.upload-label:hover {
+  background-color: #218838;
+}
+
+#videoUpload {
+  display: none;
+}
+
+.video-player-section {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.video-player-section video {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-list-section {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.video-list-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.video-list-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.video-list-section ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.video-list-section ul li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.video-list-section ul li:hover {
+  background-color: #f1f1f1;
+}

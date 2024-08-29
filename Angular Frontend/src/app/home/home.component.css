@@ -1,0 +1,142 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container fluid with background image */
+.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://cdn.dribbble.com/userupload/13281887/file/original-7e41f231a9e2db633d05009e24cbf690.png?resize=1200x900&vertical=center');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+/* Image style */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Flex container for video upload and list */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for video upload component */
+.video-upload {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+
+/* Styling for video list */
+.video-list {
+  flex: 2;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+}
+
+/* Styling for video item */
+.video-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.video-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.video-item p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.video-item a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.video-item a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.video-item a:active {
+  background-color: #004085;
+}
+
+/* Responsive text and layout */
+.custom-heading {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 576px) {
+  .custom-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-upload, .video-list {
+    margin: 10px 0;
+    width: 100%;
+  }
+}

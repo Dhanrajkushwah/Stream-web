@@ -1,0 +1,27 @@
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="upload-section">
+      <label for="videoUpload" class="upload-label">
+        <i class="fas fa-upload"></i> Upload Video
+      </label>
+      <input type="file" id="videoUpload" (change)="onVideoUpload($event)" />
+    </div>
+  
+    <div class="video-player-section">
+      <video #videoPlayer controls width="100%" [src]="videoSrc"></video>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="video-list-section">
+      <h3>Video List</h3>
+      <ul>
+        <li *ngFor="let video of videos" (click)="onVideoSelect(video.filename)">
+          <i class="fas fa-video"></i> {{ video.filename }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
